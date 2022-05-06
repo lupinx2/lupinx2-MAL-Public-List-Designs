@@ -1,19 +1,18 @@
-/*@\import "https://valeriolyndon.github.io/MAL-Public-List-Designs/Clarity%20Theme/Theme%20-%20Compressed.css";
+/*This file is the only thing that is imported from the MyAnimeList custom CSS text box, which contains only the following line:
+@\import "https://lupinx2.github.io/lupinx2-MAL-Public-List-Designs/Clarity%20Theme/MAL%20-%20Dark%20Blue%20CustomCSS.css";*/
 
-@\import "https://valeriolyndon.github.io/MAL-Public-List-Designs/Clarity%20Theme/Mod%20-%20Dark%20Mode%20Compressed.css";*/
-
-@\import "https://lupinx2.github.io/lupinx2-MAL-Public-List-Designs/Clarity%20Theme/Theme%20-%20Compressed.css";
+/*@\import "https://lupinx2.github.io/lupinx2-MAL-Public-List-Designs/Clarity%20Theme/Theme%20-%20Compressed.css";*/
+/*switch above line for below line to change from uncompressed theme.css to compressed css*/
+@\import "https://lupinx2.github.io/lupinx2-MAL-Public-List-Designs/Clarity%20Theme/Theme.css";
 
 @\import "https://lupinx2.github.io/lupinx2-MAL-Public-List-Designs/Clarity%20Theme/Mod%20-%20Dark%20Mode%20Compressed.css";
-
-/* Highlight cover on image hover*/
-/*@\import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkbefore";
-@\import "https://valeriolyndon.github.io/MAL-Public-List-Designs/Clarity%20Theme/Mod%20-%20Hover%20Image%20On%20Circle%20Compressed.css";*/
 
 /* Highlight cover on row hover*/
 @\import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkbefore";
 @\import "https://lupinx2.github.io/lupinx2-MAL-Public-List-Designs/Clarity%20Theme/Mod%20-%20Hover%20Image%20Compressed.css";
 
+/* Highlight cover on image hover
+@\import "https://lupinx2.github.io/lupinx2-MAL-Public-List-Designs/Clarity%20Theme/Mod%20-%20Hover%20Image%20On%20Circle%20Compressed.css";*/
 
 
 /*-----------------------------\

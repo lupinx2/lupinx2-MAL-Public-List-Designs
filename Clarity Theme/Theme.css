@@ -1406,7 +1406,9 @@ i.fa-chart-column::before {
 .content-status:before, .rewatching:before, .rereading:before { content: "[" }
 .content-status:after, .rewatching:after, .rereading:after { content: "] - " }
 
-
+.add-edit-more::before{
+	content:"test";
+}
 
 .add-edit-more {
 	display: inline;
