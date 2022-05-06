@@ -1408,10 +1408,12 @@ i.fa-chart-column::before {
 
 .add-edit-more::before{
 	display: inline-block;
-    width: 32px;
-    height: 32px;
-    content: "";
-    background-image: url("imgNOTFOUND.gif");
+    width: 190px;
+    height: 10px;
+    padding: 1px;
+    background-color: #f6f6f6;
+	border: #f0f0f0 1px solid;
+	border-radius: 2px;
 	/*<span class="graph-inner anime watching" style="width:143px"></span>*/
 }
 
