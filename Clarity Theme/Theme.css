@@ -1406,7 +1406,7 @@ i.fa-chart-column::before {
 .content-status:before, .rewatching:before, .rereading:before { content: "[" }
 .content-status:after, .rewatching:after, .rereading:after { content: "] - " }
 
-.add-edit-more:before{
+/*.add-edit-more:before{
 	display: inline-block;
     width: 190px;
     height: 10px;
@@ -1414,9 +1414,8 @@ i.fa-chart-column::before {
     background-color: #f6f6f6;
 	background-image: url(http://icons.iconarchive.com/icons/gakuseisean/ivista/128/Plus-icon.png);
 	border: #f0f0f0 1px solid;
-	border-radius: 2px;
-	/*<span class="graph-inner anime watching" style="width:143px"></span>*/
-}
+	border-radius: 2px;	
+}*/
 
 .add-edit-more {
 	display: inline;
