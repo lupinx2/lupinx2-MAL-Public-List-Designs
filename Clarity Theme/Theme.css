@@ -1406,12 +1406,13 @@ i.fa-chart-column::before {
 .content-status:before, .rewatching:before, .rereading:before { content: "[" }
 .content-status:after, .rewatching:after, .rereading:after { content: "] - " }
 
-.add-edit-more::before{
-	display: block;
+.add-edit-more:before{
+	display: inline-block;
     width: 190px;
     height: 10px;
     padding: 1px;
     background-color: #f6f6f6;
+	background-image: url("NOTHERE");
 	border: #f0f0f0 1px solid;
 	border-radius: 2px;
 	/*<span class="graph-inner anime watching" style="width:143px"></span>*/
