@@ -1,0 +1,106 @@
+/*@\import "https://valeriolyndon.github.io/MAL-Public-List-Designs/Clarity%20Theme/Theme%20-%20Compressed.css";
+
+@\import "https://valeriolyndon.github.io/MAL-Public-List-Designs/Clarity%20Theme/Mod%20-%20Dark%20Mode%20Compressed.css";*/
+
+@\import "https://lupinx2.github.io/lupinx2-MAL-Public-List-Designs/Clarity%20Theme/Theme%20-%20Compressed.css";
+
+@\import "https://lupinx2.github.io/lupinx2-MAL-Public-List-Designs/Clarity%20Theme/Mod%20-%20Dark%20Mode%20Compressed.css";
+
+/* Highlight cover on image hover*/
+/*@\import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkbefore";
+@\import "https://valeriolyndon.github.io/MAL-Public-List-Designs/Clarity%20Theme/Mod%20-%20Hover%20Image%20On%20Circle%20Compressed.css";*/
+
+/* Highlight cover on row hover*/
+@\import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkbefore";
+@\import "https://valeriolyndon.github.io/MAL-Public-List-Designs/Clarity%20Theme/Mod%20-%20Hover%20Image%20Compressed.css";
+
+
+
+/*-----------------------------\
+| Banner and Avatar            |
+-----------------------------*/
+body { --avatar: url(https://cdn.myanimelist.net/images/userimages/4781568.jpg?t=1607507400); }
+
+/*THIS PART COMMENTED OUT CUS WALLHAVEN WAS 403ing THE REQUEST 
+body { --name: "Lupinx2\a   Anime List"; }*/
+body {--banner:url(https://cdn.myanimelist.net/s/common/uploaded_files/1637198733-6c92ad681d0f1a2e971cca169c75b6ec.jpeg);}
+
+/*--------------------------------\
+| Background and Tint             |
+--------------------------------*/
+
+body {--background:url(https://w.wallhaven.cc/full/x1/wallhaven-x1kvo3.jpg);}
+body::before {
+	/* change colour here */
+	background: rgba(0, 0, 0, 0.8);
+	
+	content: "";
+	z-index: -1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*------------------------------*\
+| Per-Category Character Image   |
+\*-----------------------------*/
+body { --character: none; }
+/*body { --character: url(URLHERE); }*/
+
+/* All Anime */
+[data-query*='status":7'] { --character: url(URLHERE); }
+/* Watching/Reading */
+[data-query*='status":1'] { --character: url(https://www.seekpng.com/png/full/355-3556535_since-im-not-popular-ill-be-a-png.png); }
+/* Completed */
+[data-query*='status":2'] { --character: url(https://64.media.tumblr.com/tumblr_mb720rfp4t1qgltroo1_500.png); }
+/* Onhold */
+[data-query*='status":3'] { --character: url(https://64.media.tumblr.com/3b6fb5e1288d43ffba7137b0a0f9f04c/tumblr_nnc6o6tkMH1tw8163o1_500.png); }
+/* Dropped */
+[data-query*='status":4'] { --character: url(https://www.seekpng.com/png/full/124-1249453_tumblr-7-iphone-wallpapers-form-holo-images-and.png); }
+/* Planned */
+[data-query*='status":6'] { --character: url(https://64.media.tumblr.com/24356e0800aad59c5c9836df981f30d6/tumblr_nkpqrhP62e1td9dvvo1_1280.gifv); }
+
+/*------------------------------*\
+| Transparent List Rows          |
+\*-----------------------------*/
+
+:root {
+	/* Change colour and opacity here */
+	--row-tint: rgba(33,33,33,0.8);
+}
+
+.list-item, .data.priority, .data.number, .data.status:before, .data.status:after {
+	background: linear-gradient(var(--row-tint),var(--row-tint)), var(--background) no-repeat center / cover fixed transparent !important;
+}
+
+/*------------------------------*\
+| Change Status Bar Width        |
+\*-----------------------------*/
+
+.data.status { width: 5px !important; }
+.list-table-data { padding-left: 0px; }
+
+/*----------------------------------------*\
+| Header Outline (Category Colored) R0.0   |
+\*---------------------------------------*/
+
+[data-query*='status":7']{--header-border:var(--accent)}
+[data-query*='status":1']{--header-border:var(--watching)}
+[data-query*='status":2']{--header-border:var(--completed)}
+[data-query*='status":3']{--header-border:var(--onhold)}
+[data-query*='status":4']{--header-border:var(--dropped)}
+[data-query*='status":6']{--header-border:var(--plantowatch)}
+.status-menu-container:before{height:56px;border-width:1px 0;border-style:solid;border-color:var(--header-border)}.status-menu:after{left:-4px;top:-47px;border-width:2px;box-shadow:0 0 0 2px var(--header-border)}.fixed .status-menu:after{top:4px}
+
+/*----------------------------------------*\
+| Category Colored Header Text R0.0        |
+\*---------------------------------------*/
+
+.status-menu .status-button{transition:color .3s ease}.status-menu .status-button.on:nth-of-type(1),.status-menu .status-button:nth-of-type(1):hover{color:var(--accent)!important}.status-menu .status-button.on:nth-of-type(2),.status-menu .status-button:nth-of-type(2):hover{color:var(--watching)!important}.status-menu .status-button.on:nth-of-type(3),.status-menu .status-button:nth-of-type(3):hover{color:var(--completed)!important}.status-menu .status-button.on:nth-of-type(4),.status-menu .status-button:nth-of-type(4):hover{color:var(--onhold)!important}.status-menu .status-button.on:nth-of-type(5),.status-menu .status-button:nth-of-type(5):hover{color:var(--dropped)!important}.status-menu .status-button.on:nth-of-type(6),.status-menu .status-button:nth-of-type(6):hover{color:var(--plantowatch)!important}
+
+/*------------------------------*\
+| Horizontal Tags R0.2           |
+\*-----------------------------*/
+.list-table-data{padding-bottom:11px}.data.tags{position:absolute;left:0;top:0;display:flex!important;width:0;height:100%;padding:0!important;align-items:flex-end}.data.tags div{max-width:980px;margin:0 0 4px 80px;font-size:0;white-space:nowrap}.data.tags span{display:inline-block;padding:0}.data.tags span a{padding:1px 8px!important;margin:0 4px 0 0;white-space:nowrap}.data.tags span a[href*="=Favo"]{padding:0!important}.data.tags a.edit{right:-1060px}.data.tags textarea{right:-1060px}
