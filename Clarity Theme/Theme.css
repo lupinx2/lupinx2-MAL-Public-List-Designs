@@ -1407,7 +1407,12 @@ i.fa-chart-column::before {
 .content-status:after, .rewatching:after, .rereading:after { content: "] - " }
 
 .add-edit-more::before{
-	content:"test";
+	display: inline-block;
+    width: 32px;
+    height: 32px;
+    content: "";
+    background-image: url("imgNOTFOUND.gif");
+	/*<span class="graph-inner anime watching" style="width:143px"></span>*/
 }
 
 .add-edit-more {
