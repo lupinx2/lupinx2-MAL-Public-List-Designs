@@ -1,5 +1,11 @@
 # Valerio Lyndon's Public List Designs for MyAnimeList
 
+## This Fork
+
+This ReadMe file is authored by ValerioLyndon except for this section:
+This fork exists so that I can try to edit my own MAL list directly; I only use the dark mode Clarity Theme.
+You can see my list [here](https://myanimelist.net/animelist/lupin-x2). If I make any productive changes I will list them here.
+
 ## Theme Info
 
 Detailed information and install instructions can be found on [MyAnimeList](https://myanimelist.net/blog.php?eid=805506).
